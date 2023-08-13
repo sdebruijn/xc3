@@ -68,7 +68,7 @@ def get_cost_for_project(project_name, start_date, end_date):
             data for data in cost_data if data["project_name"] != ""
         ]
 
-        return cost_data
+        return cost_data_filtered
 
     except Exception as e:
         print(f"Error getting cost of project: {e}")
